@@ -1,0 +1,257 @@
+html, 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* Layout */
+
+.container {
+    width: 90%;
+    max-width: 979px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.0625em 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.19em; /* 3.09px */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.94em; /* 31px */
+    margin: 0;
+}
+
+.hero-section {
+    background-image: url("/images/article-image-hero.png");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    padding: 5.44em 0 1.56em 0;
+}
+
+.article-listing-section .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.56em; /* 41px */
+    margin-top: 2.125em; /* 34px */
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background: #202020;
+    padding: 37px 0;
+}
+
+/* Buttons */
+
+li a {
+    font-size: 0.75rem; /* 12px */
+    font-weight: 600;
+    color: #090909;
+    cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus,
+.view-more-btn:hover,
+.view-more-btn:focus{
+    color: #09090990;
+}
+
+.view-more-btn {
+    display: block;
+    border: none;
+    background: none;
+    text-decoration-line: underline;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.169em 0 2.69em 0;
+    margin: 0 auto;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.view-more-btn:focus {
+    outline-offset: 5px;
+    border-radius: 1px;
+}
+
+
+/* Typography */
+
+
+.logo-text,
+h2,
+.footer-title {
+    letter-spacing: -0.03em;
+}
+
+h2,
+h3,
+p,
+.hero-section time,
+.article-listing-section time {
+    margin: 0;
+}
+
+.hero-section time,
+h2,
+p {
+    color: #FFFFFF;
+}
+
+.logo-text {
+    font-family: Roboto, sans-serif;
+    font-size: 0.85rem; /* 13.55px */
+    color: #0E0E0E;
+}
+
+h2 {
+    font-size: 2rem; /* 32px */
+    padding: 0.25em 0;
+}
+
+h3 {
+    font-size: 1.5rem; /* 24px */
+    padding: 0.375em 0;
+    color: #141414;
+}
+
+p {
+    line-height: 130%;
+}
+
+.hero-section time {
+    font-weight: 400;
+}
+
+.article-listing-section time {
+    font-size: 0.886rem; /* 14.17px */
+    color: #000000;
+}
+
+.article-listing-section p {
+    color: #505050;
+    line-height: 125%;
+}
+
+.hero-section time,
+.footer-title,
+.copyright-text {
+    font-size: 0.75rem; /* 12px */
+}
+
+.footer-title {
+    color: #ECECEC;
+    font-weight: 700;
+    padding-bottom: 0.25em; /* 3px */
+}
+
+.copyright-text {
+    color: #D7D7D7;
+}
+
+
+/* Images */
+
+.logo img {
+    width: 23px;
+    height: 23px;
+}
+/* 
+a:first-child img{
+    margin: 2.125em 0 0.875em 0; 
+} */
+
+.article-listing-section img {
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 0.875em; 
+}
+
+/* Hidden */
+
+.hidden-article {
+    display: none;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 576px) {
+    main {
+        background-color: #FAFAFA;
+    }
+    
+    /* Header */
+    
+    .logo-text {
+        font-size: 1.2525rem; /* 20.04px */
+    }
+    
+    .logo img {
+        height: 34.25px;
+        width: 34.25px;
+    }
+    
+    .logo {
+        gap: 0.29em; /* 4.57px */
+    }
+    
+    li a {
+        font-size: 1rem; /* 16px */
+    }
+    
+    /*  */
+    
+    .hero-section {
+        background-size: cover;
+        background-position: center;
+        background-position-y: top;
+        height: 50vh;
+        align-content: flex-end;
+        padding-bottom: 3.687em; /* 59px */
+    }
+    
+    .blog-hero p {
+        max-width: 614px;
+    }
+    
+    .article-listing-section .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 3.3125em; /* 53px */
+        gap: 2.875em; /* 46px */
+    }
+    
+    h2 {
+        font-size: 2.5rem; /* 40px */
+    }
+    
+    h3 {
+        padding: 0.583em 0 0.375em 0;
+    }
+    
+    .hero-section time {
+        font-size: 1rem; /* 16px */
+    }
+    
+    .view-more-btn {
+        margin-top: 1.93em;
+    }
+}

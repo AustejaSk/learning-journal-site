@@ -1,0 +1,139 @@
+html,
+body {
+    box-sizing: border-box;
+}
+
+/* Layout */
+
+.article-section {
+    padding-top: 2em; /* 32px */
+}
+
+.about-section {
+    padding: 1.625em 0; /* 26px */
+}
+
+.recent-posts-section {
+    margin-top: 3.188em; /* 51px */
+}
+
+.recent-posts-section .container {
+    margin-top: 1.69em; /* 27px */
+    padding-bottom: 3.5em;/* 56px */
+}
+
+
+/* Typography */
+
+section time {
+    font-size: 0.75rem; /* 12px */
+}
+
+h2,
+.about-section h2,
+p,
+.about-section p {
+    color: #151515;
+}
+
+h2 {
+    font-size: 2rem; /* 32px */
+    padding: 0.5em 0; /* 16px */
+}
+
+.about-section h2 {
+    font-size: 2.1775rem; /* 34.84px */
+}
+
+.about-section p {
+    padding-bottom: 3.125em; /* 50px */
+}
+
+.recent-posts-title {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.article-text span {
+    font-weight: 700;
+    display: block;
+    padding-bottom: 1em;
+}
+
+.about-section .article-text {
+    padding-bottom: 0;
+}
+
+
+/* Images */
+
+.article-image {
+    width: 100%;
+    border-radius: 3px;
+    margin: 2.188em 0;
+}
+
+.my-img {
+    width: 182px;
+    height: 182px;
+}
+
+/* Media Queries */
+
+@media (min-width: 576px) {
+        .article-section {
+        padding-top: 4.44em; /* 71px */
+    }
+    
+        section header,
+        .article-text {
+        padding: 0 4.25em;
+    }
+    
+        section time {
+        font-size: 1rem; /* 16px */
+    }
+    
+    .about-hero {
+        display: flex;
+        align-items: center;
+        gap: 2.06em; /* 33px */
+        margin-bottom: 4.06em; /* 65px */
+        margin-top: 5.68em; /* 91px */
+    }
+    
+    .article-section h2,
+    .about-section h2 {
+        font-size: 2.25rem; /* 36px */
+    }
+    
+    .article-section h2 {
+        padding: 0.75em 0 0.843em 0;
+    }
+    
+    .about-section h2 {
+        padding-top: 0;
+        padding-bottom: 0.277em; /* 10px */
+    }
+    
+    .about-section p {
+        padding-bottom: 0;
+    }
+    
+    .article-text {
+        font-size: 1.143rem; /* 18.29px */
+    }
+    
+    .about-section .article-text {
+        font-size: 1rem; /* 16px */
+    }
+    
+    .article-text span,
+    .recent-posts-title {
+        font-size: 1.5rem; /* 24px */
+    }
+    
+    .about-section .article-text span {
+        font-size: 1.25rem; /* 20px */
+    }
+}
